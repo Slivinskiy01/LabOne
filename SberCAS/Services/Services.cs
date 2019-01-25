@@ -9,18 +9,18 @@ using LiteDB;
 
 namespace SberCAS.Services
 {
-    public class PersonServices<T> : ICRUD<T>
+    public class Services<T> : ICRUD<T>
     {
         private LiteDatabase DB {get; set;} 
         private LiteCollection<T> LiteCollection { get; set; }
 
-        public PersonServices()
+        public Services()
         {
             var db = new DataContext.DataContext();
             DB = db.Init();
         }
 
-        public PersonServices(string collection)
+        public Services(string collection)
         {
             var db = new DataContext.DataContext();
             DB = db.Init();

@@ -9,7 +9,7 @@ namespace SberCAS.DataContext
 {
     public class DataContext
     {
-        public string ConnectionString => @"MyData.db";
+        public string ConnectionString => @"DI_DB.db";
 
         public LiteDatabase Init()
         {

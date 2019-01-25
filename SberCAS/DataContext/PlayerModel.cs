@@ -10,12 +10,10 @@ namespace SberCAS.DataContext
     /// <summary>
     /// Person Model
     /// </summary>
-    public class PersonModel
+    public class PlayerModel
     {
         [BsonId]
         public Guid Guid { get; set; }
-
-        public string IDNP { get; set; }
 
         public string Name { get; set; }
 
@@ -23,8 +21,20 @@ namespace SberCAS.DataContext
 
         public string Address { get; set; }
 
-        public int Age { get; set; }
+        public string BrithDay { get; set; }
+        
+        public string NrInTeam { get; set; }
+        
+        public decimal Salary { get; set; }
 
-        public List<AccountModel> Accounts { get; set; }
+        public int CountGame { get; set; }
+
+        public int CountGoal { get; set; }
+
+        public int Growth { get; set; }
+
+        public int Weight { get; set; }
+
+        public decimal TransferCost { get; set; }
     }
 }
