@@ -1,13 +1,13 @@
 ﻿using LiteDB;
-using SberCAS.DataContext;
-using SberCAS.Services;
+using FootballTeam.DataContext;
+using FootballTeam.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SberCAS
+namespace FootballTeam
 {
     class Program
     {
@@ -102,7 +102,7 @@ namespace SberCAS
                                 update.Weight = int.Parse(str[9]);
                                 update.TransferCost = decimal.Parse(str[10]);
                             }
-                            catch (Exception ex) { Console.WriteLine(ex.Message) }
+                            catch (Exception ex) { Console.WriteLine(ex.Message); }
                             Console.WriteLine($"\nУспешно обновлен");
                             svc.Update(update, null);
                             

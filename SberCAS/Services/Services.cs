@@ -1,13 +1,13 @@
-﻿using SberCAS.IServices;
+﻿using FootballTeam.IServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SberCAS.DataContext;
+using FootballTeam.DataContext;
 using LiteDB;
 
-namespace SberCAS.Services
+namespace FootballTeam.Services
 {
     public class Services<T> : ICRUD<T>
     {
